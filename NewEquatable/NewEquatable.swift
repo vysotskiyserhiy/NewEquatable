@@ -13,8 +13,8 @@ public protocol NewEquatable: Equatable {
 }
 
 // MARK: - Equatable
-extension NewEquatable {
-    static func ==(lhs: Self, rhs: Self) -> Bool {
+public extension NewEquatable {
+    public static func ==(lhs: Self, rhs: Self) -> Bool {
         return compareDefaultProperties(lhs, rhs) && checkComparers(lhs, rhs, lhs.comparers())
     }
     
@@ -37,14 +37,14 @@ extension NewEquatable {
     }
 }
 
-extension NewEquatable {
+public extension NewEquatable {
     // you can override it to set additional types to check
-    func comparers() -> [(Self, Self) -> Bool] {
+    public func comparers() -> [(Self, Self) -> Bool] {
         return []
     }
     
     // returns equality check for given types
-    func comparer<E: Equatable>(for type: E.Type) -> (Self, Self) -> Bool {
+    public func comparer<E: Equatable>(for type: E.Type) -> (Self, Self) -> Bool {
         return {
             let (d1, d2, keys) = Self.mirror($0, $1)
             
@@ -60,7 +60,7 @@ extension NewEquatable {
         }
     }
     
-    static func comparer<E: Equatable>(for type: E.Type) -> (Self, Self) -> Bool {
+    public static func comparer<E: Equatable>(for type: E.Type) -> (Self, Self) -> Bool {
         return {
             let (d1, d2, keys) = Self.mirror($0, $1)
             
@@ -104,13 +104,13 @@ extension NewEquatable {
 }
 
 extension Dictionary {
-    func setting(_ value: Value?, for key: Key?) -> Dictionary {
+    fileprivate func setting(_ value: Value?, for key: Key?) -> Dictionary {
         var dict = self
         key.map { dict[$0] = value }
         return dict
     }
     
-    var keySet: Set<Key> {
+    fileprivate var keySet: Set<Key> {
         return Set(keys)
     }
 }
