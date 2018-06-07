@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2A52C5F920C99DA3002B0360 /* NewEquatable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A52C5F720C99DA3002B0360 /* NewEquatable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A52C60020C99DB1002B0360 /* NewEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52C5FF20C99DB1002B0360 /* NewEquatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A52C5F420C99DA3002B0360 /* NewEquatable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NewEquatable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A52C5F720C99DA3002B0360 /* NewEquatable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewEquatable.h; sourceTree = "<group>"; };
 		2A52C5F820C99DA3002B0360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A52C5FF20C99DB1002B0360 /* NewEquatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEquatable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		2A52C5F620C99DA3002B0360 /* NewEquatable */ = {
 			isa = PBXGroup;
 			children = (
+				2A52C5FF20C99DB1002B0360 /* NewEquatable.swift */,
 				2A52C5F720C99DA3002B0360 /* NewEquatable.h */,
 				2A52C5F820C99DA3002B0360 /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					2A52C5F320C99DA3002B0360 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A52C60020C99DB1002B0360 /* NewEquatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		2A52C5FD20C99DA3002B0360 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vysotskiyserhiy.NewEquatable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		2A52C5FE20C99DA3002B0360 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
