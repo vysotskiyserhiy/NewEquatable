@@ -18,7 +18,7 @@ extension NewEquatable {
         return compareDefaultProperties(lhs, rhs) && checkComparers(lhs, rhs, lhs.comparers())
     }
     
-    private static func compareDefaultProperties(_ lhs: Self, _ rhs: Self) -> Bool {
+    fileprivate static func compareDefaultProperties(_ lhs: Self, _ rhs: Self) -> Bool {
         let comparers = [
             comparer(for: String.self),
             comparer(for: Int.self),
@@ -32,7 +32,7 @@ extension NewEquatable {
         return checkComparers(lhs, rhs, comparers)
     }
     
-    private static func checkComparers(_ lhs: Self, _ rhs: Self, _ comparers: [(Self, Self) -> Bool]) -> Bool {
+    fileprivate static func checkComparers(_ lhs: Self, _ rhs: Self, _ comparers: [(Self, Self) -> Bool]) -> Bool {
         return comparers.reduce(true, { $0 && $1(lhs, rhs) })
     }
 }
@@ -79,7 +79,7 @@ extension NewEquatable {
 
 // MARK: - Delegate functions
 extension NewEquatable {
-    private static func compareValuesOfType<T: Equatable>(_ type: T.Type, value1: Any, value2: Any) -> Bool? {
+    fileprivate static func compareValuesOfType<T: Equatable>(_ type: T.Type, value1: Any, value2: Any) -> Bool? {
         let possibleValue1 = value1 as? T
         let possibleValue2 = value2 as? T
         
@@ -95,7 +95,7 @@ extension NewEquatable {
         }
     }
     
-    private static func mirror(_ lhs: Any, _ rhs: Any) -> (lhsInfo: [String: Any], rhsInfo: [String: Any], keys: Set<String>) {
+    fileprivate static func mirror(_ lhs: Any, _ rhs: Any) -> (lhsInfo: [String: Any], rhsInfo: [String: Any], keys: Set<String>) {
         let info1 = Mirror(reflecting: lhs).children.reduce([String: Any](), { $0.setting($1.value, for: $1.label) })
         let info2 = Mirror(reflecting: rhs).children.reduce([String: Any](), { $0.setting($1.value, for: $1.label) })
         let keys = info1.keySet.intersection(info2.keySet)
