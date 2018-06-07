@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NewEquatable'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'New way of implementing Equatable protocol'
   s.homepage         = 'https://github.com/vysotskiyserhiy/NewEquatable'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
