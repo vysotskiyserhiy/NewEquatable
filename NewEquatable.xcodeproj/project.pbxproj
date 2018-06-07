@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A52C5F920C99DA3002B0360 /* NewEquatable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A52C5F720C99DA3002B0360 /* NewEquatable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A52C60020C99DB1002B0360 /* NewEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52C5FF20C99DB1002B0360 /* NewEquatable.swift */; };
+		2A52C60220C9A265002B0360 /* NewEquatable.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2A52C60120C9A264002B0360 /* NewEquatable.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		2A52C5F720C99DA3002B0360 /* NewEquatable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewEquatable.h; sourceTree = "<group>"; };
 		2A52C5F820C99DA3002B0360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A52C5FF20C99DB1002B0360 /* NewEquatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEquatable.swift; sourceTree = "<group>"; };
+		2A52C60120C9A264002B0360 /* NewEquatable.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewEquatable.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		2A52C5F620C99DA3002B0360 /* NewEquatable */ = {
 			isa = PBXGroup;
 			children = (
+				2A52C60120C9A264002B0360 /* NewEquatable.podspec */,
 				2A52C5FF20C99DB1002B0360 /* NewEquatable.swift */,
 				2A52C5F720C99DA3002B0360 /* NewEquatable.h */,
 				2A52C5F820C99DA3002B0360 /* Info.plist */,
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A52C60220C9A265002B0360 /* NewEquatable.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
