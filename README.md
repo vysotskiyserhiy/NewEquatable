@@ -3,8 +3,7 @@
 ## Example
 
 ```swift
-// imaging that you have a struct...
-// and you make it Equatable just like this
+// To make struct Equatable by all fields just conform to NewEquatable
 
 struct SomeEasyStruct: NewEquatable {
     let id: String
