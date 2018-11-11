@@ -15,7 +15,6 @@
 /* Begin PBXFileReference section */
 		2A52C5F420C99DA3002B0360 /* NewEquatable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NewEquatable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A52C5F720C99DA3002B0360 /* NewEquatable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewEquatable.h; sourceTree = "<group>"; };
-		2A52C5F820C99DA3002B0360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A52C5FF20C99DB1002B0360 /* NewEquatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEquatable.swift; sourceTree = "<group>"; };
 		2A52C60120C9A264002B0360 /* NewEquatable.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewEquatable.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -53,7 +52,6 @@
 				2A52C60120C9A264002B0360 /* NewEquatable.podspec */,
 				2A52C5FF20C99DB1002B0360 /* NewEquatable.swift */,
 				2A52C5F720C99DA3002B0360 /* NewEquatable.h */,
-				2A52C5F820C99DA3002B0360 /* Info.plist */,
 			);
 			path = NewEquatable;
 			sourceTree = "<group>";
