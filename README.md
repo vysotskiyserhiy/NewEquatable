@@ -1,4 +1,4 @@
-# NewEquatable
+# NewEquatable (DEPRECATED)
 
 ## Example
 
